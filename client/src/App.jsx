@@ -6,7 +6,7 @@ import MobileControls from "./components/MobileControls";
 import { useSnakeGame } from "./hooks/useSnakeGame";
 import { GAME_STATES, CANVAS_SIZE } from "./utils/constants";
 import "./App.css";
-
+//test
 export default function App() {
   const {
     snake,
