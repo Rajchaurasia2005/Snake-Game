@@ -1,0 +1,56 @@
+export const GRID_SIZE = 20;
+export const CELL_SIZE = 24;
+export const CANVAS_SIZE = GRID_SIZE * CELL_SIZE; // 480px
+
+export const DIRECTIONS = {
+  UP: { x: 0, y: -1 },
+  DOWN: { x: 0, y: 1 },
+  LEFT: { x: -1, y: 0 },
+  RIGHT: { x: 1, y: 0 },
+};
+
+export const KEY_MAP = {
+  ArrowUp: "UP",
+  ArrowDown: "DOWN",
+  ArrowLeft: "LEFT",
+  ArrowRight: "RIGHT",
+  w: "UP",
+  s: "DOWN",
+  a: "LEFT",
+  d: "RIGHT",
+  W: "UP",
+  S: "DOWN",
+  A: "LEFT",
+  D: "RIGHT",
+};
+
+export const OPPOSITE = {
+  UP: "DOWN",
+  DOWN: "UP",
+  LEFT: "RIGHT",
+  RIGHT: "LEFT",
+};
+
+export const LEVELS = [
+  { level: 1, speed: 150, scoreThreshold: 0, label: "ROOKIE" },
+  { level: 2, speed: 130, scoreThreshold: 50, label: "SOLDIER" },
+  { level: 3, speed: 110, scoreThreshold: 120, label: "HUNTER" },
+  { level: 4, speed: 90, scoreThreshold: 220, label: "PREDATOR" },
+  { level: 5, speed: 70, scoreThreshold: 360, label: "APEX" },
+  { level: 6, speed: 55, scoreThreshold: 550, label: "LEGEND" },
+];
+
+export const POINTS_PER_FOOD = 10;
+
+export const INITIAL_SNAKE = [
+  { x: 10, y: 10 },
+  { x: 9, y: 10 },
+  { x: 8, y: 10 },
+];
+
+export const GAME_STATES = {
+  IDLE: "IDLE",
+  PLAYING: "PLAYING",
+  PAUSED: "PAUSED",
+  GAME_OVER: "GAME_OVER",
+};

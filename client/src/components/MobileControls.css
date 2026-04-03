@@ -1,0 +1,53 @@
+.mobile-controls {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin-top: 16px;
+}
+
+@media (max-width: 768px) {
+  .mobile-controls {
+    display: flex;
+  }
+}
+
+.ctrl-row {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+
+.ctrl-middle {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.ctrl-center {
+  width: 52px;
+  height: 52px;
+}
+
+.ctrl-btn {
+  width: 52px;
+  height: 52px;
+  background: rgba(0, 255, 100, 0.08);
+  border: 1px solid rgba(0, 255, 100, 0.25);
+  border-radius: 8px;
+  color: rgba(0, 255, 100, 0.8);
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.1s, border-color 0.1s;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.ctrl-btn:active {
+  background: rgba(0, 255, 100, 0.2);
+  border-color: #00ff64;
+}

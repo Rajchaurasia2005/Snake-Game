@@ -1,0 +1,124 @@
+.leaderboard {
+  background: rgba(0, 255, 100, 0.03);
+  border: 1px solid rgba(0, 255, 100, 0.15);
+  border-radius: 8px;
+  padding: 16px;
+  width: 100%;
+  max-width: 420px;
+}
+
+.lb-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.lb-title {
+  font-family: "Orbitron", monospace;
+  font-size: 0.85rem;
+  color: #00ff64;
+  letter-spacing: 0.15em;
+  margin: 0;
+}
+
+.lb-reset {
+  background: transparent;
+  border: 1px solid rgba(255, 60, 110, 0.4);
+  color: rgba(255, 60, 110, 0.7);
+  font-family: "Share Tech Mono", monospace;
+  font-size: 0.65rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  letter-spacing: 0.1em;
+  transition: all 0.2s;
+}
+.lb-reset:hover {
+  border-color: #ff3c6e;
+  color: #ff3c6e;
+  background: rgba(255, 60, 110, 0.1);
+}
+
+.lb-status {
+  font-family: "Share Tech Mono", monospace;
+  font-size: 0.75rem;
+  text-align: center;
+  padding: 20px 0;
+  opacity: 0.5;
+}
+
+.lb-error {
+  color: #ff3c6e;
+  opacity: 0.8;
+}
+
+.lb-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.lb-row {
+  display: grid;
+  grid-template-columns: 28px 1fr 60px 30px 70px;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 8px;
+  border-radius: 4px;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 0.75rem;
+}
+
+.lb-heading {
+  color: rgba(0, 255, 100, 0.4);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  border-bottom: 1px solid rgba(0, 255, 100, 0.1);
+  padding-bottom: 8px;
+  margin-bottom: 4px;
+}
+
+.lb-top {
+  background: rgba(0, 255, 100, 0.06);
+  border: 1px solid rgba(0, 255, 100, 0.15);
+}
+
+.lb-rank {
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.lb-name {
+  color: #e0ffe8;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+.lb-score {
+  color: #00ff64;
+  font-weight: bold;
+  text-align: right;
+}
+
+.lb-level {
+  color: rgba(0, 255, 100, 0.5);
+  text-align: center;
+}
+
+.lb-date {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 0.65rem;
+  text-align: right;
+}
+
+@media (max-width: 500px) {
+  .lb-date-col {
+    display: none;
+  }
+  .lb-row {
+    grid-template-columns: 28px 1fr 60px 30px;
+  }
+}
