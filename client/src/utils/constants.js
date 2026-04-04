@@ -32,12 +32,12 @@ export const OPPOSITE = {
 };
 
 export const LEVELS = [
-  { level: 1, speed: 150, scoreThreshold: 0, label: "ROOKIE" },
-  { level: 2, speed: 130, scoreThreshold: 50, label: "SOLDIER" },
-  { level: 3, speed: 110, scoreThreshold: 120, label: "HUNTER" },
-  { level: 4, speed: 90, scoreThreshold: 220, label: "PREDATOR" },
-  { level: 5, speed: 70, scoreThreshold: 360, label: "APEX" },
-  { level: 6, speed: 55, scoreThreshold: 550, label: "LEGEND" },
+  { level: 1, speed: 200, scoreThreshold: 0, label: "ROOKIE" },
+  { level: 2, speed: 180, scoreThreshold: 50, label: "SOLDIER" },
+  { level: 3, speed: 160, scoreThreshold: 120, label: "HUNTER" },
+  { level: 4, speed: 140, scoreThreshold: 220, label: "PREDATOR" },
+  { level: 5, speed: 115, scoreThreshold: 360, label: "APEX" },
+  { level: 6, speed: 110, scoreThreshold: 550, label: "LEGEND" },
 ];
 
 export const POINTS_PER_FOOD = 10;
