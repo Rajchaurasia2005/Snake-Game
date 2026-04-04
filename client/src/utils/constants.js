@@ -37,11 +37,9 @@ export const LEVELS = [
   { level: 3, speed: 160, scoreThreshold: 120, label: "HUNTER" },
   { level: 4, speed: 140, scoreThreshold: 220, label: "PREDATOR" },
   { level: 5, speed: 115, scoreThreshold: 360, label: "APEX" },
-<<<<<<< HEAD
-  { level: 6, speed: 110, scoreThreshold: 550, label: "LEGEND" },
-=======
+
   { level: 6, speed: 100, scoreThreshold: 550, label: "LEGEND" },
->>>>>>> cc01c4c1b75860dc3a991bdd9a9175788c7b5d4e
+
 ];
 
 export const POINTS_PER_FOOD = 10;
