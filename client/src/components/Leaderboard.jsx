@@ -25,11 +25,11 @@ export default function Leaderboard({ refreshKey }) {
     fetchScores();
   }, [refreshKey]);
 
-  // const handleReset = async () => {
-  //   if (!window.confirm("Reset all high scores?")) return;
-  //   await resetScores();
-  //   fetchScores();
-  // };
+  const handleReset = async () => {
+    if (!window.confirm("Reset all high scores?")) return;
+    await resetScores();
+    fetchScores();
+  };
 
   const medals = ["🥇", "🥈", "🥉"];
 
