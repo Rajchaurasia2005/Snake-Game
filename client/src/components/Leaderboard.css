@@ -22,7 +22,7 @@
   margin: 0;
 }
 
-.lb-reset {
+/* .lb-reset {
   background: transparent;
   border: 1px solid rgba(255, 60, 110, 0.4);
   color: rgba(255, 60, 110, 0.7);
@@ -38,7 +38,7 @@
   border-color: #ff3c6e;
   color: #ff3c6e;
   background: rgba(255, 60, 110, 0.1);
-}
+} */
 
 .lb-status {
   font-family: "Share Tech Mono", monospace;
