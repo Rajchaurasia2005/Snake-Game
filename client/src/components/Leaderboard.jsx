@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { getScores, resetScores } from "../utils/api";
+import { getScores } from "../utils/api";
 import { formatDate } from "../utils/gameUtils";
 import "./Leaderboard.css";
 
@@ -25,11 +25,7 @@ export default function Leaderboard({ refreshKey }) {
     fetchScores();
   }, [refreshKey]);
 
-  // const handleReset = async () => {
-  //   if (!window.confirm("Reset all high scores?")) return;
-  //   await resetScores();
-  //   fetchScores();
-  };
+  
 
   const medals = ["🥇", "🥈", "🥉"];
 
@@ -37,9 +33,7 @@ export default function Leaderboard({ refreshKey }) {
     <div className="leaderboard">
       <div className="lb-header">
         <h2 className="lb-title">HALL OF FAME</h2>
-        {/* <button className="lb-reset" onClick={handleReset} title="Reset scores">
-          ↺ RESET
-        </button> */}
+        
       </div>
 
       {loading && <div className="lb-status">LOADING...</div>}
