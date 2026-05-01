@@ -25,10 +25,10 @@ export default function Leaderboard({ refreshKey }) {
     fetchScores();
   }, [refreshKey]);
 
-  const handleReset = async () => {
-    if (!window.confirm("Reset all high scores?")) return;
-    await resetScores();
-    fetchScores();
+  // const handleReset = async () => {
+  //   if (!window.confirm("Reset all high scores?")) return;
+  //   await resetScores();
+  //   fetchScores();
   };
 
   const medals = ["🥇", "🥈", "🥉"];
@@ -37,9 +37,9 @@ export default function Leaderboard({ refreshKey }) {
     <div className="leaderboard">
       <div className="lb-header">
         <h2 className="lb-title">HALL OF FAME</h2>
-        <button className="lb-reset" onClick={handleReset} title="Reset scores">
+        {/* <button className="lb-reset" onClick={handleReset} title="Reset scores">
           ↺ RESET
-        </button>
+        </button> */}
       </div>
 
       {loading && <div className="lb-status">LOADING...</div>}
